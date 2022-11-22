@@ -65,7 +65,7 @@
         <div class="overlay">
             <section class="tittle-section section">
                 <h1 class="tittle" >Ефективні рішення для<br> вашого бізнесу</h1>
-                <button type="button" class="tittle-button">Замовити послугу</button>
+                <button data-modal-open type="button" class="tittle-button">Замовити послугу</button>
             </section>
         </div>
 
@@ -140,9 +140,38 @@
             <div class="conteiner-two">
         <h2>Чим ми займаємося</h2>
         <ul class="displayed-foto">
-            <li class="displayed"><img  src="./images/comp1.jpg" alt="робота за компютером" width="370"></li>
-            <li class="displayed"><img  src="./images/comp2.jpg" alt="робота за компютером" width="370"></li>
-            <li class="displayed"><img  src="./images/comp3.jpg" alt="робота за компютером" width="370"></li>
+            <li class="displayed"> 
+                <div class="displayed-thumb">
+                    <div class="box-bkg"><h3>Десктопні додатки</h3> </div>
+                     
+                    <img  src="./images/comp1.jpg" alt="робота за компютером" width="370">
+    
+                </div>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="displayed">
+                <div class="displayed-thumb">
+                    <div class="box-bkg"><h3>Мобільні додатки</h3></div>
+
+                        <img  src="./images/comp2.jpg" alt="робота за компютером" width="370">
+                </div>
+            </li>
+
+
+            <li class="displayed">
+                <div class="displayed-thumb">
+                    <div class="box-bkg">
+                        <h3>Дизайнерські рішення</h3>
+                    </div>
+            
+                    <img src="./images/comp3.jpg" alt="робота за компютером" width="370">
+                </div>
+            </li>
         </ul>
         </div>
         </section>
@@ -524,6 +553,21 @@
     </div>
     </footer>
 
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <div class="modal-close-item">
+                <a href="#" class="modal-close-link" data-modal-close >
+                    <svg class="modal-icon-close">
+                        <use href="./images/Vector.svg#icon-close-modal" > </use>
+                    </svg>
+                </a>
+            </div>
+                
+           
+        </div>
+    </div>
+
+<script src="./js/modal.js"></script>
 </body>
 </html>
 

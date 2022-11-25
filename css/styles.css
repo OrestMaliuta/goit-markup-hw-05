@@ -1016,36 +1016,34 @@ margin-bottom: 27px;
 
 
 
-    
+ .modal-close-item{ 
+    display: flex;
+    justify-content: end;
+    }
         
+.modal-close-btn { 
+        width: 30px;
+        height: 30px;
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}  
 
-  
-
-.modal-close-item { 
-   
-    width: 30px; 
-    height: 30px;
-    background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    margin-left: auto;
-   
-}
-
-.modal-close-item { position: relative;}
 .modal-icon-close {
     
-     width: 100%;
-     height: 100%;
+
+
+padding-top: 3px;
+padding-left: 2px;
+padding-right: 2px;
     
 }
 
+.modal-close-btn { }
 
-.blue-text { 
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(33, 150, 243, 0.9);
-}
 
 

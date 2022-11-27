@@ -549,6 +549,7 @@ font-family: 'Roboto';
 
 
 
+
 .description-text {
     position: absolute;
     top: 0;
@@ -575,7 +576,27 @@ font-family: 'Roboto';
 }
 .description-text:hover::before { 
         transform: translateY(0);
-        transition: 250ms var(--timing-function);
+        transition: 250ms var(--timing-function); 
+}
+/*-----------------------FOCUS-description------------------------*/
+
+.hover-a:focus .description::before {
+    transform: translateY(0);
+    transition: 250ms var(--timing-function);
+}
+
+.hover-a:focus .description-text {
+    transform: translateY(0);
+    transition: 250ms var(--timing-function);
+}
+
+.description:focus::before {
+    transform: translateY(0);
+    transition: 250ms var(--timing-function);
+}
+.description-text:focus::before {
+    transform: translateY(0);
+    transition: 250ms var(--timing-function);
 }
 /*---------------------------------------------------------*/
 
@@ -705,33 +726,33 @@ align-items: baseline;
 .our-advantages-list { display: flex;
     align-items: center;
     justify-content: center;
-margin-bottom: 27px;
+    margin-bottom: 27px;
     background: #F5F4FA;
-        border-radius: 4px;
-            width: 270px;
-            height: 120px;
-            }
+    border-radius: 4px;
+    width: 270px;
+    height: 120px;
+}
 
 .tittle-section {
   
 
-        padding: 200px 0px;
-     max-width: 1600px;
-        height: 600px;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: #2F303A;
-        background-image: linear-gradient(to right,
-                rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)),
-    
-    
-            url("../images/mainbckg.jpg");
-    
-    
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
+    padding: 200px 0px;
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #2F303A;
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+
+
+        url("../images/mainbckg.jpg");
+
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 
@@ -1027,19 +1048,19 @@ margin-bottom: 27px;
         background: #FFFFFF;
         border: 1px solid rgba(0, 0, 0, 0.1);
         border-radius: 50%;
-        
+        margin-left: auto;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: ;
 }  
 
 .modal-icon-close {
     
 
 
-padding-top: 3px;
-padding-left: 2px;
-padding-right: 2px;
+    padding-top: 3px;
+    padding-left: 2px;
+    padding-right: 2px;
     
 }
 
